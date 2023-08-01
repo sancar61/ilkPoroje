@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="signup"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="344dp"></TextView>
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="signupButton"
+        android:text="Çıkış Yap"
+        app:layout_constraintEnd_toEndOf="@+id/signupeditText2"
+        app:layout_constraintStart_toStartOf="@+id/signupeditText2"
+        app:layout_constraintTop_toBottomOf="@+id/signupeditText2" />
+
+
+    <TextView
+        android:id="@+id/loginRedirect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Registred. login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/signupeditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="adı"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signupeditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="soyadı"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/signupeditText"
+        app:layout_constraintStart_toStartOf="@+id/signupeditText"
+        app:layout_constraintTop_toBottomOf="@+id/signupeditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
